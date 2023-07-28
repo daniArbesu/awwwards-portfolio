@@ -24,8 +24,9 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
-    project: './tsconfig.json',
   },
   plugins: ['react'],
-  rules: {},
+  rules: {
+    '@typescript-eslint/explicit-function-return-type': 'off',
+  },
 };
