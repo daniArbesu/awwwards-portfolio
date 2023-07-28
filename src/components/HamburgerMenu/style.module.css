@@ -1,0 +1,50 @@
+.button {
+  position: fixed;
+  right: 0;
+  margin: 20px;
+  width: 80px;
+  height: 80px;
+  background-color: var(--color-blue);
+  cursor: pointer;
+  border: 0;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+.hamburger {
+  width: 100%;
+}
+
+.hamburger::after,
+.hamburger::before {
+  content: '';
+  display: block;
+  width: 40%;
+  background-color: var(--color-white);
+  height: 1px;
+  margin: auto;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.hamburger::after {
+  top: -5px;
+}
+
+.hamburger::before {
+  top: 5px;
+}
+
+.hamburgerActive::after {
+  top: -1px;
+  transform: rotate(45deg);
+}
+
+.hamburgerActive::before {
+  top: 0px;
+  transform: rotate(-45deg);
+}

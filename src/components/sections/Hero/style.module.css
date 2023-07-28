@@ -1,0 +1,5 @@
+.hero {
+  background-color: var(--hero-background-color);
+  height: 100svh;
+  width: 100%;
+}

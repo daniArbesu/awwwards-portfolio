@@ -1,0 +1,16 @@
+:root {
+  --color-dark: #1c1d20;
+  --color-white: #fff;
+  --color-blue: #455ce9;
+  --hero-background-color: #999d9e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden; /* Hide scrollbars */
+}
