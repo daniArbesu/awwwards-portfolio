@@ -2,6 +2,7 @@
   padding: clamp(5em, 21vh, 12em);
   display: flex;
   justify-content: center;
+  margin-bottom: 100vh;
 }
 
 .container {
@@ -34,4 +35,21 @@
   font-weight: 400;
   line-height: 1.7;
   text-wrap: balance;
+}
+
+.button {
+  top: 90%;
+  left: calc(100% - 300px);
+  width: 180px;
+  height: 180px;
+  background-color: #1c1d20;
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
 }
