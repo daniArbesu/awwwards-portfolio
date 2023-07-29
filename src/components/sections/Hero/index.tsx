@@ -1,4 +1,3 @@
-'use client';
 import Image from 'next/image';
 import styles from './style.module.css';
 import { useLayoutEffect, useRef } from 'react';
