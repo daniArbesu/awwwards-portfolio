@@ -16,6 +16,11 @@ body {
   overflow: hidden; /* Hide scrollbars */
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 ::selection {
   background-color: var(--color-highlight);
   color: var(--color-white);
