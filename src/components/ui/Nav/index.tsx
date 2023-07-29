@@ -1,4 +1,4 @@
-import { navLinks } from '@/utils/navLinks';
+import { navLinks } from '@/constants/navLinks';
 import styles from './style.module.css';
 import Link from 'next/link';
 
