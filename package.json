@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "framer-motion": "^10.15.0",
+    "gsap": "^3.12.2",
     "locomotive-scroll": "^5.0.0-beta.8",
     "next": "13.4.12",
     "prettier": "^3.0.0",

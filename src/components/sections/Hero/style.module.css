@@ -1,5 +1,54 @@
 .hero {
-  background-color: var(--hero-background-color);
+  position: relative;
+  display: flex;
   height: 100svh;
-  width: 100%;
+  margin-bottom: 100svh;
+  overflow: hidden;
+}
+
+.hero img {
+  object-fit: cover;
+}
+
+.sliderContainer {
+  position: absolute;
+  top: calc(100svh - 350px);
+}
+
+.slider {
+  position: relative;
+  white-space: nowrap;
+}
+
+.slider p {
+  position: relative;
+  margin: 0;
+  padding-right: 50px;
+  color: var(--color-white);
+  font-size: 15rem;
+  font-weight: 500;
+}
+
+.slider p:nth-of-type(2) {
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+
+.description {
+  position: absolute;
+  top: 35%;
+  left: 65%;
+  color: var(--color-white);
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.description p {
+  margin-bottom: 10px;
+}
+
+.description svg {
+  transform: scale(2);
+  margin-bottom: 100px;
 }
