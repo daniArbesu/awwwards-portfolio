@@ -8,6 +8,7 @@
 
 .hero img {
   object-fit: cover;
+  filter: brightness(0.8);
 }
 
 .sliderContainer {
@@ -38,10 +39,10 @@
 .description {
   position: absolute;
   top: 35%;
-  left: 65%;
+  left: 70%;
   color: var(--color-white);
-  font-size: 1.5rem;
-  font-weight: 300;
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 .description p {
@@ -50,5 +51,5 @@
 
 .description svg {
   transform: scale(2);
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
