@@ -2,7 +2,7 @@
   display: flex;
 }
 
-.logoWrapper p {
+.logoWrapper span {
   transition: var(--transition-all);
 }
 
@@ -15,14 +15,14 @@
   transition: var(--transition-all);
 }
 
-.logo p {
+.logo span {
   position: relative;
   transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
 }
-.logo p:nth-of-type(2) {
+.logo span:nth-of-type(2) {
   padding-left: 0.3em;
 }
-.logo p:nth-of-type(3) {
+.logo span:nth-of-type(3) {
   position: absolute;
   left: 125px;
   padding-left: 0.3em;
