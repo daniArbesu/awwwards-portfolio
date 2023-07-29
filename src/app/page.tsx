@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import styles from './page.module.css';
 import { createLocomotive } from '@/services/locomotive';
 import HeroSection from '@/components/sections/Hero';
+import AboutSection from '@/components/sections/AboutSection';
 
 export default function Home() {
   useEffect(() => {
@@ -13,6 +14,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <HeroSection />
+      <AboutSection />
     </main>
   );
 }
