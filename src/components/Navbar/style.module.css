@@ -5,6 +5,7 @@
   height: 100svh;
   background-color: var(--color-dark);
   color: var(--color-white);
+  z-index: 3;
 }
 
 .body {
