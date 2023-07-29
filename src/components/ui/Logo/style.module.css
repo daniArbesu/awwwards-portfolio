@@ -1,0 +1,48 @@
+.logoWrapper {
+  display: flex;
+  cursor: pointer;
+}
+
+.logoWrapper p {
+  transition: var(--transition-all);
+}
+
+.logo {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: 5px;
+  transition: var(--transition-all);
+}
+
+.logo p {
+  position: relative;
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.logo p:nth-of-type(2) {
+  padding-left: 0.3em;
+}
+.logo p:nth-of-type(3) {
+  position: absolute;
+  left: 125px;
+  padding-left: 0.3em;
+}
+
+.logoWrapper:hover {
+  .copyright {
+    transform: rotate(360deg);
+  }
+  .logo {
+    padding-right: 30px;
+    .codeBy {
+      transform: translateX(-100%);
+    }
+    .name {
+      transform: translateX(-75px);
+    }
+    .surname {
+      transform: translateX(-75px);
+    }
+  }
+}

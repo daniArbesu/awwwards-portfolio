@@ -1,8 +1,9 @@
 :root {
   --color-dark: #1c1d20;
   --color-white: #fff;
-  --color-blue: #455ce9;
-  --hero-background-color: #999d9e;
+  --color-highlight: #455ce9;
+
+  --transition-all: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
 }
 
 * {
@@ -13,4 +14,10 @@
 
 body {
   overflow: hidden; /* Hide scrollbars */
+}
+
+::selection {
+  background-color: var(--color-highlight);
+  color: var(--color-white);
+  text-shadow: none;
 }

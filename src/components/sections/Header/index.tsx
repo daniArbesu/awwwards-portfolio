@@ -4,38 +4,18 @@ import HamburgerMenu from '../../HamburgerMenu';
 import styles from './style.module.css';
 import NavBar from '../../Navbar';
 import { useState } from 'react';
+import Nav from '@/components/ui/Nav';
+import Logo from '@/components/ui/Logo';
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
 
   return (
     <>
-      <div className={styles.header}>
-        <div className={styles.logo}>
-          <p className={styles.copyright}>©</p>
-          <div className={styles.name}>
-            <p className={styles.codeBy}>Code by</p>
-            <p className={styles.dennis}>Dennis</p>
-            <p className={styles.snellenberg}>Snellenberg</p>
-          </div>
-        </div>
-        <div className={styles.nav}>
-          <div className={styles.el}>
-            <a>Work</a>
-            <div className={styles.indicator}></div>
-          </div>
-
-          <div className={styles.el}>
-            <a>About</a>
-            <div className={styles.indicator}></div>
-          </div>
-
-          <div className={styles.el}>
-            <a>Contact</a>
-            <div className={styles.indicator}></div>
-          </div>
-        </div>
-      </div>
+      <header className={styles.header}>
+        <Logo />
+        <Nav />
+      </header>
       <HamburgerMenu isActive={isActive} setIsActive={setIsActive} />
       <AnimatePresence>{isActive && <NavBar />}</AnimatePresence>
     </>
