@@ -13,7 +13,7 @@
 
 .sliderContainer {
   position: absolute;
-  top: calc(100svh - 350px);
+  top: calc(100svh - 300px);
 }
 
 .slider {
