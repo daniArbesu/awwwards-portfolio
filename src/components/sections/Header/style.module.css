@@ -6,29 +6,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
+  color: var(--color-white);
   padding: 20px;
   font-weight: 400;
   font-size: 1.1rem;
   z-index: 1;
-}
-
-.headerButtonContainer {
-  transform: scale(0);
-  position: fixed;
-  right: 0px;
-  z-index: 4;
-
-  .button {
-    position: relative;
-    margin: 20px;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: #1c1d20;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 }

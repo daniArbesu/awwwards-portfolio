@@ -1,6 +1,6 @@
 'use client';
 import { AnimatePresence } from 'framer-motion';
-import HamburgerMenu from '../../HamburgerMenu';
+import HamburgerButton from '../../ui/HamburgerButton';
 import styles from './style.module.css';
 import NavBar from '../../Navbar';
 import { useState } from 'react';
@@ -16,7 +16,7 @@ const Header = () => {
         <Logo />
         <Nav />
       </header>
-      <HamburgerMenu isActive={isActive} setIsActive={setIsActive} />
+      <HamburgerButton isActive={isActive} setIsActive={setIsActive} />
       <AnimatePresence>{isActive && <NavBar />}</AnimatePresence>
     </>
   );
