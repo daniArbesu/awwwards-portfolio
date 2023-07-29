@@ -4,6 +4,7 @@ import styles from './page.module.css';
 import { createLocomotive } from '@/services/locomotive';
 import HeroSection from '@/components/sections/Hero';
 import AboutSection from '@/components/sections/AboutSection';
+import ProjectsSection from '@/components/sections/ProjectsSection';
 
 export default function Home() {
   useEffect(() => {
@@ -15,6 +16,7 @@ export default function Home() {
     <main className={styles.main}>
       <HeroSection />
       <AboutSection />
+      <ProjectsSection />
     </main>
   );
 }

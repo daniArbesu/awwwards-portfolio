@@ -2,7 +2,6 @@
   padding: clamp(5em, 21vh, 12em);
   display: flex;
   justify-content: center;
-  margin-bottom: 100vh;
 }
 
 .container {

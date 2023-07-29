@@ -1,4 +1,4 @@
-import { navLinks } from '@/constants/navLinks';
+import { navLinks } from '@/constants/cmsInfo';
 import styles from './style.module.css';
 import Link from 'next/link';
 

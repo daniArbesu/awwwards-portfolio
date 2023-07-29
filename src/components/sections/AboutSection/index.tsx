@@ -1,4 +1,4 @@
-import { aboutText } from '@/constants/aboutText';
+import { aboutText } from '@/constants/cmsInfo';
 import styles from './style.module.css';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
