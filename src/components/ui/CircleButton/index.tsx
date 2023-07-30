@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import styles from './style.module.css';
 import { gsap } from 'gsap';
+import MagneticEffect from '../MagneticEffect';
 
 interface Props {
   children: JSX.Element;
@@ -40,15 +41,17 @@ const CircleButton: React.FC<Props> = ({
   };
 
   return (
-    <div
-      style={{ overflow: 'hidden' }}
-      {...attributes}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
-      {children}
-      <div ref={circleRef} style={{ backgroundColor }} className={styles.circle}></div>
-    </div>
+    <MagneticEffect>
+      <div
+        style={{ overflow: 'hidden' }}
+        {...attributes}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        {children}
+        <div ref={circleRef} style={{ backgroundColor }} className={styles.circle}></div>
+      </div>
+    </MagneticEffect>
   );
 };
 
