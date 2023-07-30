@@ -4,6 +4,7 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { opacity, slideUp } from './animation';
 import Link from 'next/link';
+import CircleButton from '@/components/ui/CircleButton';
 
 const AboutSection = () => {
   const aboutSectionRef = useRef(null);
@@ -25,11 +26,11 @@ const AboutSection = () => {
           {aboutText[1]}
         </motion.p>
       </div>
-      <div data-scroll data-scroll-speed="0.05">
-        <Link href="/about" className={styles.button}>
-          About Me
-        </Link>
-      </div>
+      <Link href="/about" data-scroll data-scroll-speed="0.05">
+        <CircleButton className={styles.button}>
+          <p>About Me</p>
+        </CircleButton>
+      </Link>
     </section>
   );
 };

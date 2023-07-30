@@ -48,7 +48,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
+}
+
+.button p {
+  margin: 0px;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
+  position: relative;
+  z-index: 1;
 }
