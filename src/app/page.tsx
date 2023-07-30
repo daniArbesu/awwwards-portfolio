@@ -5,6 +5,7 @@ import { createLocomotive } from '@/services/locomotive';
 import HeroSection from '@/components/sections/Hero';
 import AboutSection from '@/components/sections/AboutSection';
 import ProjectsSection from '@/components/sections/ProjectsSection';
+import SliderSection from '@/components/sections/SliderSection';
 
 export default function Home() {
   useEffect(() => {
@@ -17,6 +18,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <ProjectsSection />
+      <SliderSection />
     </main>
   );
 }
