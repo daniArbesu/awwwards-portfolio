@@ -2,6 +2,7 @@ import { useLayoutEffect, useRef } from 'react';
 import styles from './style.module.css';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
+import CircleButton from '../CircleButton';
 
 interface Props {
   isActive: boolean;
@@ -30,14 +31,14 @@ const HamburgerButton: React.FC<Props> = ({ isActive, setIsActive }) => {
 
   return (
     <div className={styles.buttonWrapper} ref={hamburgerRef}>
-      <button
+      <CircleButton
         className={styles.button}
         onClick={() => {
           setIsActive(!isActive);
         }}
       >
         <div className={`${styles.hamburger} ${isActive ? styles.hamburgerActive : ''}`}></div>
-      </button>
+      </CircleButton>
     </div>
   );
 };

@@ -4,16 +4,13 @@ import { gsap } from 'gsap';
 import MagneticEffect from '../MagneticEffect';
 
 interface Props {
-  children: JSX.Element;
+  children: React.ReactNode;
   backgroundColor?: string;
-  className: string;
+  className?: string;
+  onClick?: () => void;
 }
 
-const CircleButton: React.FC<Props> = ({
-  children,
-  backgroundColor = '#455CE9',
-  ...attributes
-}) => {
+const CircleButton: React.FC<Props> = ({ children, backgroundColor = '#455CE9', ...props }) => {
   const circleRef = useRef(null);
   const timeline = useRef(gsap.timeline({ paused: true }));
   let timeoutId: NodeJS.Timeout | null = null;
@@ -44,7 +41,7 @@ const CircleButton: React.FC<Props> = ({
     <MagneticEffect>
       <div
         style={{ overflow: 'hidden' }}
-        {...attributes}
+        {...props}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
