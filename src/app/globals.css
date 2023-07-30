@@ -4,6 +4,9 @@
   --color-highlight: #455ce9;
 
   --transition-all: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+
+  --padding-container: 6vw;
+  --padding-container-md: calc(var(--padding-container) * 2);
 }
 
 * {
@@ -24,6 +27,13 @@ a {
 ul,
 li {
   list-style: none;
+}
+
+section {
+  margin: 0 auto;
+  padding-left: var(--padding-container);
+  padding-right: var(--padding-container);
+  max-width: 100em;
 }
 
 ::selection {
