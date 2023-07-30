@@ -6,6 +6,7 @@ import HeroSection from '@/components/sections/Hero';
 import AboutSection from '@/components/sections/AboutSection';
 import ProjectsSection from '@/components/sections/ProjectsSection';
 import SliderSection from '@/components/sections/SliderSection';
+import FooterSection from '@/components/sections/FooterSection';
 
 export default function Home() {
   useEffect(() => {
@@ -19,6 +20,7 @@ export default function Home() {
       <AboutSection />
       <ProjectsSection />
       <SliderSection />
+      <FooterSection />
     </main>
   );
 }
