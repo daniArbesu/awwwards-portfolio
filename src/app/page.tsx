@@ -18,6 +18,7 @@ export default function Home() {
     const locomotiveScroll = createLocomotive();
     setTimeout(() => {
       setIsLoading(false);
+      window.scrollTo(0, 0); // Scroll to start (in case page is reloaded)
     }, 2000);
   }, []);
 

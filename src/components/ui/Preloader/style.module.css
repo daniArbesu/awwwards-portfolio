@@ -17,3 +17,14 @@
   position: absolute;
   z-index: 1;
 }
+
+.introduction svg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: calc(100% + 300px);
+}
+
+.introduction path {
+  fill: var(--color-dark);
+}
