@@ -8,6 +8,7 @@
   z-index: 99;
   background-color: var(--color-dark);
 }
+
 .introduction p {
   display: flex;
   color: var(--color-white);
