@@ -10,7 +10,12 @@ interface Props {
   onClick?: () => void;
 }
 
-const CircleButton: React.FC<Props> = ({ children, backgroundColor = '#455CE9', ...props }) => {
+const CircleButton: React.FC<Props> = ({
+  children,
+  backgroundColor = '#455CE9',
+  className = styles.roundedButton,
+  ...props
+}) => {
   const circleRef = useRef(null);
   const timeline = useRef(gsap.timeline({ paused: true }));
   let timeoutId: NodeJS.Timeout | null = null;
@@ -40,6 +45,7 @@ const CircleButton: React.FC<Props> = ({ children, backgroundColor = '#455CE9', 
   return (
     <MagneticEffect>
       <div
+        className={className}
         style={{ overflow: 'hidden' }}
         {...props}
         onMouseEnter={handleMouseEnter}

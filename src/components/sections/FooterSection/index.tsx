@@ -3,6 +3,8 @@ import styles from './style.module.css';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import { FooterArrow } from '@/components/ui/icons/Index';
+import Link from 'next/link';
+import CircleButton from '@/components/ui/CircleButton';
 
 const FooterSection = () => {
   const [time, setTime] = useState('');
@@ -40,15 +42,25 @@ const FooterSection = () => {
           </span>
           <h2>together</h2>
           <motion.div style={{ x }} className={styles.buttonContainer}>
-            <a href="/contact" className={styles.button}>
-              Get in touch
-            </a>
+            <Link href="/contact">
+              <CircleButton backgroundColor={'#334BD3'} className={styles.button}>
+                <p>Get in touch</p>
+              </CircleButton>
+            </Link>
           </motion.div>
           <FooterArrow rotate={rotateArrow} />
         </div>
         <div className={styles.nav}>
-          <a href="#">info@dennissnellenberg.com</a>
-          <a href="#">+31 6 27 84 74 30</a>
+          <a href="#">
+            <CircleButton>
+              <p>info@dennissnellenberg.com</p>
+            </CircleButton>
+          </a>
+          <a href="#">
+            <CircleButton>
+              <p>+31 6 27 84 74 30</p>
+            </CircleButton>
+          </a>
         </div>
         <div className={styles.info}>
           <div>
