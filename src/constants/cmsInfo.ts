@@ -75,3 +75,14 @@ export const sliderProjects = [
     src: 'wix.jpg'
   }
 ];
+
+export const preloaderWords = [
+  'Hello',
+  'Bonjour',
+  'Ciao',
+  'Olà',
+  'やあ',
+  'Hallå',
+  'Guten tag',
+  'Hallo'
+];

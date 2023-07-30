@@ -1,0 +1,18 @@
+.introduction {
+  height: 100svh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 99;
+  background-color: var(--color-dark);
+}
+.introduction p {
+  display: flex;
+  color: var(--color-white);
+  font-size: 42px;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+}
