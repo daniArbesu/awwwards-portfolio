@@ -1,7 +1,29 @@
+import { useState } from 'react';
 import styles from './style.module.css';
+import { projects } from '@/constants/cmsInfo';
+import Project from '@/components/ui/Project';
+import ProjectModal from '@/components/ui/ProjectModal';
 
 const ProjectsSection = () => {
-  return <section className={styles.projects}>ProjectsSection</section>;
+  const [modal, setModal] = useState({ isActive: false, projectIndex: 0 });
+
+  return (
+    <section className={styles.projects}>
+      <ul className={styles.container}>
+        {projects.map(({ title, type, href }, index) => (
+          <Project
+            key={index}
+            title={title}
+            type={type}
+            href={href}
+            projectIndex={index}
+            setModal={setModal}
+          />
+        ))}
+      </ul>
+      <ProjectModal modal={modal} />
+    </section>
+  );
 };
 
 export default ProjectsSection;

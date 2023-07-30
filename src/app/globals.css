@@ -21,6 +21,11 @@ a {
   color: inherit;
 }
 
+ul,
+li {
+  list-style: none;
+}
+
 ::selection {
   background-color: var(--color-highlight);
   color: var(--color-white);

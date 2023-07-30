@@ -13,22 +13,30 @@ export const aboutText = [
 export const projects = [
   {
     title: 'C2 Montreal',
-    src: 'c2montreal.png',
-    color: '#000000'
+    type: 'Design & Development',
+    img: 'c2montreal.avif',
+    color: '#000000',
+    href: '/work/c2-montreal'
   },
   {
     title: 'Office Studio',
-    src: 'officestudio.png',
-    color: '#8C8C8C'
+    type: 'Design & Development',
+    img: 'officestudio.avif',
+    color: '#8C8C8C',
+    href: '/work/office-studio'
   },
   {
     title: 'Locomotive',
-    src: 'locomotive.png',
-    color: '#EFE8D3'
+    type: 'Design & Development',
+    img: 'locomotive.avif',
+    color: '#EFE8D3',
+    href: '/work/locomotive'
   },
   {
     title: 'Silencio',
-    src: 'silencio.png',
-    color: '#706D63'
+    type: 'Design & Development',
+    img: 'silencio.avif',
+    color: '#706D63',
+    href: '/work/silencio'
   }
 ];

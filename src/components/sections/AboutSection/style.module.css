@@ -41,7 +41,7 @@
   left: calc(100% - 300px);
   width: 180px;
   height: 180px;
-  background-color: #1c1d20;
+  background-color: var(--color-dark);
   color: white;
   border-radius: 50%;
   position: absolute;
